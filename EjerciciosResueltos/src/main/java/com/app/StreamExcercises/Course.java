@@ -1,0 +1,57 @@
+package com.app.StreamExcercises;
+
+public class Course {
+    private String titulo;
+    private float duracion; //Expresada en horas
+    private int videos; //cantidad de vídeos
+    private int alumnos; //Cantidad de alumnos
+
+    public Course(String titulo, float duracion, int videos, int alumnos) {
+        this.titulo = titulo;
+        this.duracion = duracion;
+        this.videos = videos;
+        this.alumnos = alumnos;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public float getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(float duracion) {
+        this.duracion = duracion;
+    }
+
+    public int getVideos() {
+        return videos;
+    }
+
+    public void setVideos(int videos) {
+        this.videos = videos;
+    }
+
+    public int getAlumnos() {
+        return alumnos;
+    }
+
+    public void setAlumnos(int alumnos) {
+        this.alumnos = alumnos;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "titulo='" + titulo + '\'' +
+                ", duracion=" + duracion +
+                ", videos=" + videos +
+                ", alumnos=" + alumnos +
+                '}';
+    }
+}
